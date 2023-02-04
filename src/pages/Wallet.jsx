@@ -39,6 +39,9 @@ const Wallet = () => {
 
     const goToReceive = () =>
         navigate('/receive')
+    
+    const goToSend = () =>
+        navigate('/send')
 
     return (
         <>
@@ -80,7 +83,7 @@ const Wallet = () => {
 
                     <div className="columns">
                         <div className="column">
-                            <button title="Go to send transaction page" className="button is-primary is-light is-large is-fullwidth">Send</button>
+                            <button title="Go to send transaction page" className="button is-primary is-light is-large is-fullwidth" onClick={goToSend}>Send</button>
                         </div>
                         <div className="column">
                             <button title="See your address" className="button is-primary is-light is-large is-fullwidth" onClick={goToReceive}>Receive</button>

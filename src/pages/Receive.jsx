@@ -18,7 +18,7 @@ const Receive = () => {
             : (
                 <div className="box">
                     <Header withBackButton={true} />
-                    <h5 className="title is-4 has-text-centered mt-6">Your BTC address:</h5>
+                    <h3 className="title is-4 has-text-centered mt-6">Your BTC address:</h3>
                     <img src={qr.createDataURL(10)} style={{width: '100%'}} />
                     <p className="box is-size-5 has-text-centered has-text-weight-bold mb-3 has-background-primary p-2">
                         zTVwKtsTJJK6cd8nEcoAuicprYxyJgm4WvqohJ

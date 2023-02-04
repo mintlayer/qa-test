@@ -3,6 +3,7 @@ import App from './App'
 import CreateAccount from './pages/CreateAccount'
 import Login from './pages/Login'
 import Receive from './pages/Receive'
+import Send from './pages/Send'
 import Wallet from './pages/Wallet'
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
         path: '/receive',
         element: <Receive />
+    },
+    {
+        path: '/send',
+        element: <Send />
     },
 ])
 
