@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  node:
+    build: ./node
+    image: node
+    command: sh -c "sleep infinity"
+    working_dir: /workspace/project
+    volumes:
+      - ../project:/workspace/project:delegated
+    ports:
+      - "5173:5173"
