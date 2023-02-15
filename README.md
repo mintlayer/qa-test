@@ -3,7 +3,7 @@ The only purpose of this repo is to be used as technical test for new QA Enginee
 
 
 ## What are the requirements to setup this project?
-This project requires `NodeJS` intalled on version 18+.
+This project requires `Docker Desktop` intalled.
 
 
 ## How to setup this project?
@@ -12,10 +12,26 @@ Just clone the repo and install deps.
 ```bash
 git clone URL
 cd qatest
-npm i
+```
+
+Now it's time to turn on the docker machine.
+
+```
+cd docker
+docker-compose up
 ```
 
 ## How to run this project?
+
+Install dependencies in the new image.
+
+```
+cd qatest
+cd docker
+docker-compose exec node sh
+npm i
+```
+
 Run `dev` script from NPM.
 
 ```bash
