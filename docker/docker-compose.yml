@@ -3,7 +3,7 @@ version: '3.1'
 services:
   node:
     image: node:lts-alpine3.17
-    command: sh -c "sleep infinity"
+    command: sh -c "npm i && npm run dev"
     working_dir: /workspace/project
     volumes:
       - ../project:/workspace/project:delegated
