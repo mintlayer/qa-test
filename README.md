@@ -14,28 +14,26 @@ git clone URL
 cd qatest
 ```
 
-Now it's time to turn on the docker machine.
+## How to run this project?
+
+### How to run using Docker
 
 ```
 cd docker
 docker-compose up
 ```
 
-## How to run this project?
+### How to run using your local node
 
 Install dependencies in the new image.
 
 ```
 cd qatest
-cd docker
-docker-compose exec node sh
+cd project
 npm i
-```
-
-Run `dev` script from NPM.
-
-```bash
 npm run dev
 ```
 
-Then open your browser on the address [http://localhost:5173](http://localhost:5173).
+## How to open this project
+
+Open your browser on the address [http://localhost:5173](http://localhost:5173).
